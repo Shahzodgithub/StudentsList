@@ -1,15 +1,26 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view />
+    <Home/>
   </div>
 </template>
 
+<script>
+import Home from './views/Home.vue';
+export default {
+  components:{Home}
+}
+</script>
+
 <style lang="scss">
+body{
+  position: relative;
+}
+body {
+    background-color: antiquewhite;
+    position: relative;
+}
 #app {
+  padding: 100px 0;
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
